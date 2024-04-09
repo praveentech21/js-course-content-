@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Presentation</title>
+
+    <!-- title -> javasc -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .code {
+            font-family: monospace;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            background-color: #ffd700;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">Welcome to the JavaScript Presentation</h1>
+        <!-- container -> h1 -> heading -->
+        <h2>Introduction to JavaScript</h2>
+        <h1>What is JavaScript?</h1>
+        <p>
+            JavaScript is a programming language used to give functionality to web pages. It is often referred to as a client-side scripting language because it runs on the user's web browser.
+        </p>
+        <p>
+            JavaScript is also a scripting language that can be easily embedded within HTML and can interact with other web technologies such as CSS and HTML5.
+        </p>
+        <p>
+            Additionally, JavaScript is an object-oriented language, meaning it follows a programming paradigm based on the concept of objects, which can contain data and code.
+        </p>
+
+        <h1>Why JavaScript?</h1>
+        <p>
+            JavaScript is a versatile language capable of running user-side programming, making web pages more interactive and dynamic.
+        </p>
+        <p>
+            It is lightweight and can be easily executed in the browser console, making it ideal for debugging and testing code.
+        </p>
+        <p>
+            Due to its ease of use, lightweight nature, and high capabilities, JavaScript has been extended to backend development with technologies like Node.js, allowing developers to build full-stack web applications using a single language.
+        </p>
+
+        <h2>Basic Concepts of JavaScript</h2>
+        <ul>
+            <li>Syntax</li>
+            <li>Variables</li>
+            <li>Operators</li>
+            <li>Data Types</li>
+            <li>Events</li>
+            <li>Strings</li>
+            <li>Arrays</li>
+            <li>Dates</li>
+            <li>If Else Statements</li>
+            <li>Loops</li>
+            <li>Switch Statements</li>
+            <li>Functions</li>
+        </ul>
+
+        <h2>Object-Oriented Programming (OOP) Concepts</h2>
+        <p>
+            Object-oriented programming is a programming paradigm based on the concept of "objects", which can contain data and code. Objects are instances of classes, which define the structure and behavior of objects.
+        </p>
+        <p>
+            Let's create a "Human" class as an example:
+        </p>
+        <pre>
+        <div class="code">
+            class Human {
+                constructor(name, age) {
+                    this.name = name;
+                    this.age = age;
+                }
+
+                speak() {
+                    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+                }
+            }
+
+            // Creating objects (instances) of the Human class
+            const person1 = new Human('Alice', 30);
+            const person2 = new Human('Bob', 25);
+
+            person1.speak(); // Output: Hello, my name is Alice and I am 30 years old.
+            person2.speak(); // Output: Hello, my name is Bob and I am 25 years old.
+        </div>
+        </pre>
+        <h2>Document Object Model (DOM)</h2>
+        <p>
+            The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML documents and allows JavaScript to interact with and manipulate HTML elements.
+        </p>
+        <p>
+            With DOM manipulation, you can dynamically change the content, structure, and style of web pages based on user actions or other events.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            JavaScript is a powerful programming language that enables developers to create dynamic and interactive web applications. Understanding its basic concepts, as well as advanced topics like OOP and DOM manipulation, is essential for building modern web applications.
+        </p>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+
+    <script>
+        // Add fade-in effect to elements with class "fade-in"
+        console.log(document.getElementById('heading').innerHTML = "new value") ;
+    </script>
+</body>
+</html>
